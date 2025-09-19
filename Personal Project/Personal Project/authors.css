@@ -1,0 +1,178 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+body{
+	margin: 0;
+
+}
+
+.section1{
+height: 80px;
+background-image: url(Head.jpg);
+margin: 0;
+padding: 1px;
+
+}
+
+.ccontainer{
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.titulli{
+	width: 40%;
+}
+
+p{
+	margin: 0;
+	color: white;
+	font-size: 40px;
+ 
+}
+
+.nav li a:hover{
+	background-color: black;
+	color: white;
+	border: 1px white solid;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 4px 4px;
+	float: right;
+	margin-top:20px ;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	border: black solid 1px;
+	padding: 9px 3px;
+	background: white;
+	border-radius: 12px;
+}
+
+.section2{
+	background-color:  rgb(235, 227, 227);
+	height: 100%;
+	display: flex;
+	z-index: 1;
+	justify-content: space-around;
+    
+}
+
+.container{
+ position: relative;
+ width: 250px;
+ height: 320px;
+ flex-direction: row;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ margin-top: 60px;
+ z-index: 1;
+
+}
+
+.thecard{
+	position:absolute;
+	width: 300px;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	text-align: center;
+}
+
+.thecard:hover{
+	transform: rotateY(180deg);
+}
+
+.thefront{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	line-height: 1px;
+}
+
+.thefront img{
+	width: 94%;
+	height: 300px;
+	align-self: center;
+	padding-top:12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 14px;
+	overflow: hidden;
+}
+
+.theback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	background-color: white;
+}
+
+.section4{
+	background-color: #f0f0f0;
+	 height: 250px;
+	 z-index: 1;
+ }
+ 
+ .footer{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+ }
+
+.first, .second, .third{
+	text-align: center;
+	justify-content: space-around;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+.first{
+	margin: 10px;
+	padding: 60px 40px;
+	width: 340px;
+	height: 100px;
+}
+
+.first a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.firsttext, .secondtext, .thirdtext{
+   background-color: rgb(185, 185, 183);
+   border: 1px dotted black;
+   padding: 10px;
+}
+
+.second{
+	margin: 10px;
+	padding: 60px;
+	width: 280px;
+	height: 100px;
+}
+
+.third{
+	margin: 10px;
+	padding: 70px;
+	height: 100px;
+}
+
+.third img{
+	width: 25px;
+	height: 25px;
+}
