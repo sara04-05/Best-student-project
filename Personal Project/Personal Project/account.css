@@ -7,9 +7,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #121212, #1f1f1f);
-    color: white;
+
+    color: #e4e3e3;
     min-height: 100vh;
 }
+
 
 .section2 {
     display: flex;
@@ -19,35 +21,38 @@ body {
     padding: 2rem;
 }
 
-
 .SignUp {
-    background-color: black;
+    background: rgba(176, 173, 173, 0.12);
     padding: 3rem 2rem;
     border-radius: 12px;
     width: 100%;
     max-width: 400px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid white;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto 1.5rem;
-    max-width: 130px;
-    border-radius: 50%;
-}
 
 .Sign {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+    margin: 0;
+}
+
+.brand {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
 .detail {
     text-align: center;
-    color: #ccc;
+    color: #7a7777;
     margin-bottom: 2rem;
 }
+
 
 .forma {
     display: flex;
@@ -63,21 +68,22 @@ label {
 input[type="email"] {
     padding: 0.75rem;
     border-radius: 6px;
-    border: 1px solid #444;
-    background-color: #1c1c1c;
-    color: #f1f1f1;
+    border: 1px solid #d1d1d1;
+    background-color: #ffffff;
+    color: #0b0b0b;
     font-size: 1rem;
 }
 
 input[type="email"]::placeholder {
     color: #888;
 }
+
 input[type="password"] {
-    padding: 0.75rem;
+     padding: 0.75rem;
     border-radius: 6px;
-    border: 1px solid #444;
-    background-color: #1c1c1c;
-    color: #f1f1f1;
+    border: 1px solid #d1d1d1;
+    background-color: #ffffff;
+    color: #0b0b0b;
     font-size: 1rem;
 }
 
@@ -85,39 +91,22 @@ input[type="password"]::placeholder {
     color: #888;
 }
 
-#email_error{
-    visibility: hidden;
-    color:red;
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-}
+.pass{
+        color: #7a7777;
 
-#password_error{
-  visibility: hidden;
-    color:red;
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
 }
-
 
 button {
     padding: 0.75rem;
-    background-color: #1db954;
+    background-color: #0b0b0b;
     color: white;
     font-size: 1rem;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 button:hover {
-    background-color: #1ed760;
-}
-
-a{
-    color: white;
-    text-align: center;
+    background: rgba(51, 51, 51, 0.8);
 }
