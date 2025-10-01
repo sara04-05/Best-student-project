@@ -159,7 +159,7 @@ nav ul li a:hover{
    background-image: url(News.jpg);
    background-size: cover;
    background-repeat: no-repeat;
-   height: 100vh;
+   height: 100%;
    display: flex;
    z-index: 1;
    justify-content: space-around;
