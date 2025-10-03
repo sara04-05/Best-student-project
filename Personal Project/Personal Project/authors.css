@@ -12,17 +12,17 @@ body{
 
 .section1{
     margin: 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.section1 .container{
+/* header/container used for the top nav/title row */
+.container{
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     margin: 0;
     position: relative;
     z-index: 2;
@@ -44,7 +44,7 @@ body{
 
 @media (max-width: 700px) {
     .titulli{ position: static; transform: none; text-align: center; padding-left: 8px; }
-    .section1 .container{ justify-content: space-between; }
+    .container{ justify-content: space-between; }
 }
 
 p{
@@ -100,8 +100,6 @@ nav ul{
     gap: 8px;
     align-items: center;
 }
-
-/* duplicate rule removed */
 .nav{
     flex: 1 1 0;
     display: flex;
@@ -144,72 +142,115 @@ nav ul li a:hover{
     width: 130px;
 }
 
+
 .section2{
 	background-color:  rgb(235, 227, 227);
 	height: 100%;
 	display: flex;
 	z-index: 1;
-	justify-content: space-around;
+	justify-content: center;
     
 }
 
-.cards-1 .container{
- position: relative;
- width: 250px;
- height: 320px;
- flex-direction: row;
- justify-content: space-around;
- flex-wrap: wrap;
- margin-top: 60px;
- z-index: 1;
+/* make each cards-1 block wrap its card containers so rows are responsive */
+.cards-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 28px 12px;
+}
 
+.cards-1 .container{
+    position: relative;
+    width: 260px;
+    height: 360px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0;
+    z-index: 1;
+    perspective: 1200px; /* enable 3D for children */
 }
 
 .thecard{
-	position:absolute;
-	width: 300px;
-	transform-style: preserve-3d;
-	transition: all 0.5s ease;
-	text-align: center;
+    position: relative; /* keep in document flow */
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    text-align: center;
+    cursor: pointer;
 }
 
-.thecard:hover{
-	transform: rotateY(180deg);
+.thecard:hover,
+.thecard:focus-within{
+    transform: rotateY(180deg);
 }
 
 .thefront{
     position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: hidden;
+    background: #fff;
 }
 
 .thefront img{
-	width: 94%;
-	height: 300px;
-	align-self: center;
-	padding-top:12px;
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-bottom: 14px;
-	overflow: hidden;
+    width: 100%;
+    height: 70%;
+    object-fit: cover; /* crop to fill card neatly */
+    display: block;
+}
+
+.thefront h3{
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #111;
+    background: rgba(255,255,255,0.95);
 }
 
 .theback{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-	transform: rotateY(180deg);
-	background-color: white;
+    position: absolute;
+    inset: 0;
+    width: 400px;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: auto;
 }
+
+.theback h3{ margin: 0 0 8px 0; }
+.theback h5{ margin: 0; font-weight: 400; font-size: 0.95rem; line-height: 1.4; }
 
 .section4{
 	background-color: #f0f0f0;
 	 height: 250px;
 	 z-index: 1;
  }
+
+/* Responsive tweaks for small screens */
+@media (max-width: 700px){
+    .cards-1 .container{ width: 92%; max-width: 360px; height: auto; }
+    .thefront img{ height: 58vw; max-height: 280px; }
+    .brand{ font-size: 1.1rem; }
+}
  
  .footer{
 	display: flex;
