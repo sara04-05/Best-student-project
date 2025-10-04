@@ -155,8 +155,7 @@ nav ul li a:hover{
 
 
 .section2{
-	background-color:  rgb(235, 227, 227);
-   height: 100%;
+background-image: url('vintagebck .png');   height: 100%;
    display: flex;
    z-index: 1;
    justify-content: space-around;
