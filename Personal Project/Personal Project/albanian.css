@@ -59,7 +59,7 @@ p{
 
 .brand{
     text-decoration: none;
-    color: black;
+    color:black;
     font-size: 28px;
     font-weight: 600;
     white-space: nowrap;
@@ -180,6 +180,7 @@ background-image: url('vintagebck .png');   height: 100%;
 	overflow: hidden;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 	margin: 10px;
+	margin-left: 38px;
 	z-index: 1;  
 }
 
@@ -204,7 +205,7 @@ background-image: url('vintagebck .png');   height: 100%;
 }
 
 .card-content h3{
-	font-size: 18px;
+	font-size: 15px;
 	margin-bottom: 4px;
 }
 
