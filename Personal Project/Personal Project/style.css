@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin-left: 3spx;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -173,6 +173,14 @@ nav ul li a:hover{
     margin-top: 60px;
     z-index: 1;
     width: 380px;
+}
+.cards-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;        
+    width: 100%;
+    margin: 20px 0;
 }
 
 .card{
