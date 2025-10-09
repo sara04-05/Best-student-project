@@ -221,59 +221,69 @@ nav ul li a:hover{
 }
 
 
+hr{
+    opacity: 0.1;
+}
 
-.section4{
-    background-color: #f0f0f0;
-     height: 250px;
-     z-index: 1;
- }
- 
- .footer{
+
+.footer{
+   padding: auto;
+
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    
+}
+.socialIcons{
     display: flex;
-    text-align: center;
-    justify-content: space-around;
- }
-
-.first, .second, .third{
-    text-align: center;
-    justify-content: space-around;
-    box-sizing: border-box;
-    font-size: 20px;
+    justify-content: center;
+  
 }
 
-.first{
-    margin: 10px;
-    padding: 60px 40px;
-    width: 340px;
-    height: 100px;
-}
-
-.first a{
+.socialIcons a{
     text-decoration: none;
-    color: black;
-}
-
-
-.firsttext, .secondtext, .thirdtext{
-   background-color: rgb(185, 185, 183);
-   border: 1px dotted black;
-   padding: 10px;
-}
-
-.second{
+    padding:10px;
+    background-color: black;
     margin: 10px;
-    padding: 60px;
-    width: 280px;
-    height: 100px;
+    border-radius: 50%;
 }
 
-.third{
-    margin: 10px;
-    padding: 70px;
-    height: 100px;
+.socialIcons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
 }
 
-.third img{
-    width: 25px;
-    height: 25px;
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5;
+}
+ 
+.socialIcons a:hover i{
+color: white;
+transition: 0.5;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 2.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity:1 ;
 }
