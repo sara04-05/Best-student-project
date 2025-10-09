@@ -221,14 +221,10 @@ nav ul li a:hover{
 }
 
 
-hr{
-    opacity: 0.1;
-}
 
 
 .footer{
-   padding: auto;
-
+   padding: 0 0 0px;
 }
 
 .footerContainer{
@@ -266,18 +262,21 @@ color: white;
 transition: 0.5;
 }
 
-.footerNav{
-    margin: 30px 0;
-}
+
 
 .footerNav ul{
     display: flex;
     justify-content: center;
+    list-style-type:
+    none;
+    
 }
 
 .footerNav ul li a{
-    color: white;
-    margin: 20px;
+    color: black;
+    text-align: center;
+    justify-content: space-between;
+    padding:12px;
     text-decoration: none;
     font-size: 2.3em;
     opacity: 0.7;

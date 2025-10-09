@@ -210,58 +210,67 @@ background-image: url('vintagebck .png');
 	margin-bottom: 4px;
 }
 
-.section4{
-	background-color: #f0f0f0;
-	 height: 250px;
-	 z-index: 1;
- }
+
+.footer{
+   padding: 0 0 0px;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding:10px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5;
+}
  
- .footer{
-	display: flex;
-	text-align: center;
-	justify-content: space-around;
- }
-
-.first, .second, .third{
-	text-align: center;
-	justify-content: space-around;
-	box-sizing: border-box;
-	font-size: 20px;
-}
-
-.first{
-	margin: 10px;
-	padding: 60px 40px;
-	width: 340px;
-	height: 100px;
-}
-
-.first a{
-	text-decoration: none;
-	color: black;
+.socialIcons a:hover i{
+color: white;
+transition: 0.5;
 }
 
 
-.firsttext, .secondtext, .thirdtext{
-   background-color: rgb(185, 185, 183);
-   border: 1px dotted black;
-   padding: 10px;
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type:
+    none;
+    
 }
 
-.second{
-	margin: 10px;
-	padding: 60px;
-	width: 280px;
-	height: 100px;
+.footerNav ul li a{
+    color: black;
+    text-align: center;
+    justify-content: space-between;
+    padding:12px;
+    text-decoration: none;
+    font-size: 2.3em;
+    opacity: 0.7;
+    transition: 0.5s;
 }
 
-.third{
-	margin: 10px;
-	padding: 70px;
-	height: 100px;
-}
-
-.third img{
-	width: 25px;
-	height: 25px;
+.footerNav ul li a:hover{
+    opacity:1 ;
 }
