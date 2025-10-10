@@ -191,7 +191,8 @@ nav ul li a:hover{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
     z-index: 1;  
 }
 
@@ -222,14 +223,23 @@ nav ul li a:hover{
 
 
 
-
 .footer{
    padding: 0 0 0px;
+    background-image: url(News.jpg);
 }
 
 .footerContainer{
     width: 100%;
-    padding: 70px 30px 20px;
+    background-color: rgb(225, 223, 223);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      position: relative;
+      margin-top: -20px; 
+      z-index: 10;  
+      box-shadow: 0 4px 8px rgb(0, 0, 0);       
     
 }
 .socialIcons{
@@ -260,23 +270,30 @@ nav ul li a:hover{
 .socialIcons a:hover i{
 color: white;
 transition: 0.5;
+
 }
 
 
+hr{
+  width: 80%;        
+  margin: 0 auto;    
+  border: 0;
+  border-top: 2px solid black;
+  opacity: 0.3;
+}
 
 .footerNav ul{
     display: flex;
     justify-content: center;
-    list-style-type:
-    none;
-    
+    list-style-type: none;
+    padding: 8px;
 }
 
 .footerNav ul li a{
     color: black;
     text-align: center;
     justify-content: space-between;
-    padding:12px;
+    padding: 12px;
     text-decoration: none;
     font-size: 2.3em;
     opacity: 0.7;

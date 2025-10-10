@@ -325,6 +325,8 @@ nav ul li a:hover{
 
 .footer{
    padding: 0 0 0px;
+    transform: rotate();
+
 }
 
 .footerContainer{
@@ -337,7 +339,8 @@ nav ul li a:hover{
       border-top-right-radius: 100px;
       position: relative;
       margin-top: -20px; 
-      z-index: 10;         
+      z-index: 10;  
+      box-shadow: 0 4px 8px rgb(0, 0, 0);       
     
 }
 .socialIcons{
@@ -371,6 +374,9 @@ transition: 0.5;
 
 }
 
+.section3{
+    background-image: url(author_background_color_change.png);
+}
 
 hr{
   width: 80%;        
